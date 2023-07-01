@@ -25,7 +25,7 @@ Before getting started, make sure you have the following prerequisites:
 
 Clone this repository to your local machine:
 
-```shell
+
 git clone https://github.com/awssalrawi/SerialPort-Electron-Vite-React.git
 
 Install Dependencies
@@ -51,7 +51,7 @@ This project is licensed under the MIT License.
 - ## Arduino Code
 
 ```cpp
-###
+ ```shell
 #include <ArduinoJson.h>
 
 const int buttonPin1 = 2; // Digital pin for button 1
