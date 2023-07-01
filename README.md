@@ -10,6 +10,44 @@ This project is built to read serial data from 5 buttons connected to an Arduino
 - React for building the user interface.
 - User-friendly interface for inputting characters and forming words.
 
+
+
+## Prerequisites
+
+Before getting started, make sure you have the following prerequisites:
+
+- Node.js installed on your machine
+- Yarn or npm package managers
+
+## Getting Started
+
+### Clone the Repository
+
+Clone this repository to your local machine:
+
+```shell
+git clone https://github.com/awssalrawi/SerialPort-Electron-Vite-React.git
+
+Install Dependencies
+Navigate to the project directory:
+
+cd SerialPort-Electron-Vite-React
+Install the project dependencies using yarn or npm:
+Using yarn:
+yarn install
+Using npm:
+npm install
+
+Run the Application
+After the build process is complete, you can run the Electron application:
+
+Using yarn: yarn dev
+using npm: npm run dev
+## Contributing
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+## License
+This project is licensed under the MIT License.
+
 - ## Arduino Code
 
 ```cpp
@@ -77,39 +115,3 @@ String getButtonStates() {
 
   return binaryString;
 }
-
-## Prerequisites
-
-Before getting started, make sure you have the following prerequisites:
-
-- Node.js installed on your machine
-- Yarn or npm package managers
-
-## Getting Started
-
-### Clone the Repository
-
-Clone this repository to your local machine:
-
-```shell
-git clone https://github.com/awssalrawi/SerialPort-Electron-Vite-React.git
-
-Install Dependencies
-Navigate to the project directory:
-
-cd SerialPort-Electron-Vite-React
-Install the project dependencies using yarn or npm:
-Using yarn:
-yarn install
-Using npm:
-npm install
-
-Run the Application
-After the build process is complete, you can run the Electron application:
-
-Using yarn: yarn dev
-using npm: npm run dev
-## Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
-## License
-This project is licensed under the MIT License.
