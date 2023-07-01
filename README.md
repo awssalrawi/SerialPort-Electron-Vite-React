@@ -108,7 +108,7 @@ Run the Application
 After the build process is complete, you can run the Electron application:
 
 Using yarn: yarn dev
-using npm : npm run dev
+using npm: npm run dev
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 ## License
