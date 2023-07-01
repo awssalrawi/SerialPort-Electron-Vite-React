@@ -21,7 +21,7 @@ Before getting started, make sure you have the following prerequisites:
 
 ## Getting Started
 
-### Clone the Repository
+## Clone the Repository
 
 Clone this repository to your local machine:
 
@@ -51,6 +51,7 @@ This project is licensed under the MIT License.
 - ## Arduino Code
 
 ```cpp
+###
 #include <ArduinoJson.h>
 
 const int buttonPin1 = 2; // Digital pin for button 1
