@@ -10,18 +10,26 @@ const SubChar = ({ data }) => {
   const chars = value.split("");
   const charFromOthers = location.state.choicesWords;
   const [selectedElement, setSelectedElement] = useState(0);
+  const [checkUpdate, setCheckUpdate] = useState(false);
   const boxContainerRef = useRef(null);
   const [selectedChar, setSelectedChar] = useState(
     charFromOthers ? charFromOthers : ""
   );
   const handleCharClick = (char) => {
     setSelectedChar((prevChar) => prevChar + char);
+    setCheckUpdate(true);
   };
 
   const handleGoBack = () => {
     setSelectedChar((prevChar) => prevChar.slice(0, -1));
   };
-
+  useEffect(() => {
+    if (checkUpdate) {
+      navigate("/", { state: { words: selectedChar } });
+      setCheckUpdate(false);
+    }
+    console.log("updated", selectedChar);
+  }, [checkUpdate]);
   useEffect(() => {
     const activeButton = Object.keys(data).find((key) => data[key] === 1);
     let debounceTimer;
@@ -91,7 +99,12 @@ const SubChar = ({ data }) => {
             navigate("/", { state: { words: selectedChar } });
           }
         }
-      }, 350); // Adjust the debounce time (in milliseconds) to your needs
+
+        // setTimeout(() => {
+        //   // navigate("/", { state: { words: selectedChar } });
+        //   console.log("showing the data", selectedChar);
+        // }, 100);
+      }, 50); // Adjust the debounce time (in milliseconds) to your needs
     }
     return () => {
       clearTimeout();

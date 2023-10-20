@@ -17,8 +17,8 @@ const useSerialData = () => {
       const stateObject = JSON.parse(data);
       const resultObject = {};
 
-      for (let i = 0; i < stateObject.btns.length; i++) {
-        const buttonState = stateObject.btns[i];
+      for (let i = 0; i < stateObject.b.length; i++) {
+        const buttonState = stateObject.b[i];
         const buttonName = buttonNames[i];
         resultObject[buttonName] = parseInt(buttonState);
       }
